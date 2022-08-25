@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+nav{
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    list-style: none;
+    align-items: center;
+}
+nav li{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 20px;
+    align-items: center;
+    align-content: center;  
+}
+nav a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+nav img{
+    width: 60px;
+    height: 60px;
+    max-width: 500px ;
+}
+#introducao_Site{
+    background-image: ;
+    height: 800px;
+}
+h1{
+    font-size: 40px;
+    color: black;
+}
+#tiposServicos{
+    padding: 20px;
+    background-color: blueviolet;
+    text-align: center;
+}
+#list-tiposServicos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.servico{
+    background-color: white;
+    margin: 55px;
+    width: 200px;
+    min-width: 100px;
+    height: 150px;
+    border-radius: 15px;
+    box-shadow: 5px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.servico img{
+    margin-top: 15px;
+    width: 70px;
+    height: 70px;
+}
