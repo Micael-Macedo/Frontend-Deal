@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat' !important;
+}
+header{
+    position: sticky;
+}
+nav{
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    list-style: none;
+    align-items: center;
+}
+nav li{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 20px;
+    align-items: center;
+    align-content: center;  
+}
+nav a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+nav img{
+    width: 60px;
+    height: 60px;
+}
+span#navMenu{
+    background-color: whitesmoke;
+    color: blueviolet;
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+}
+span#navMenu:hover{
+    background-color: blueviolet !important;
+    color: black !important;
+}
+menu{
+    display: none;
+}
+#introducao_Site{
+    display: flex;
+    height: 800px;
+}
+#introducao_site h1{
+    font-size: 40px;
+    font-weight: bolder !important;
+    color: black;
+}
+#introducao_Site p{
+    color: grey;
+    font-size: 30px;
+}
+#introducao_Site button{
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: blueviolet !important;
+    color: white !important;
+}
+#tiposServicos{
+    padding: 20px;
+    background-color: blueviolet;
+    text-align: center;
+}
+#list-tiposServicos{
+    display: flex;
+    height: 600px;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.servico{
+    background-color: white;
+    margin: 20px 10px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 5px 5px black;
+    border-radius: 15px;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.servico img{
+    margin-top: 15px;
+    width: 70px;
+    height: 70px;
+}
+.formularioPrestador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fontMontserrat{
+    font-family: 'Montserrat';font-size: 30px;
+    
+}
+
+.mb-3{
+    width: 500px;
+    font-family: 'Montserrat';font-size: 15px;
+    color: blueviolet;
+}
+
+.btn-primary{
+    font-family: 'Montserrat';font-size: 15px !important;
+    background-color: blueviolet;
+    border: 0ch;
+}
+
+.area_atuacao{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
