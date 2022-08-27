@@ -3,6 +3,21 @@
     padding: 0;
     font-family: 'Montserrat' !important;
 }
+:root{
+    --nav-button-text: black !important;
+    --nav-button-text-hover: blueviolet !important;
+    --nav-button-menu-bg: whitesmoke; 
+    --nav-button-menu-text: blueviolet;
+    --nav-button-menu-bg-hover: whitesmoke; 
+    --nav-button-menu-text-hover: blueviolet;
+    --h1-introducao-site: black;
+    --h2-tipos-de-servicos: white;
+    --body-button: blueviolet !important;
+    --body-button-text: white !important;
+    --body-button-hover: black !important;
+    --body-button-text-hover: white !important;
+
+}
 header{
     position: sticky;
 }
@@ -31,25 +46,31 @@ nav a{
     display: flex;
     align-items: center;
     text-decoration: none;
+    color: var(--nav-button-text);
+    transition: 0.5s;
+}
+nav a:hover{
+    color: var(--nav-button-text-hover);
 }
 nav img{
     width: 60px;
     height: 60px;
 }
 span#navMenu{
-    background-color: whitesmoke;
-    color: blueviolet;
+    background-color: var(--nav-button-menu-bg);
+    color: var(--nav-button-menu-text);
     padding: 10px;
     display: block;
     cursor: pointer;
 }
 span#navMenu:hover{
-    background-color: blueviolet !important;
-    color: black !important;
+    background-color: var(--nav-button-menu-bg-hover) ;
+    color: var(--nav-button-menu-text-hover) ;
 }
 menu{
     display: none;
 }
+
 #introducao_Site{
     display: flex;
     height: 800px;
@@ -57,7 +78,7 @@ menu{
 #introducao_site h1{
     font-size: 40px;
     font-weight: bolder !important;
-    color: black;
+    color: var(--h1-introducao-site)
 }
 #introducao_Site p{
     color: grey;
@@ -66,13 +87,25 @@ menu{
 #introducao_Site button{
     border-radius: 10px;
     padding: 10px 15px;
-    background-color: blueviolet !important;
-    color: white !important;
+    border-color: var(--body-button);
+    background-color: var(--body-button);
+    color:var(--body-button-text);
+    transition: 1s;
+}
+#introducao_Site button:hover{
+    border-color: var(--body-button-hover);
+    background-color: var(--body-button-hover);
+}
+h2{
+    margin: 50px 0 !important;
 }
 #tiposServicos{
     padding: 20px;
     background-color: blueviolet;
     text-align: center;
+}
+#tiposServicos h2{
+    color: white;
 }
 #list-tiposServicos{
     display: flex;
@@ -81,6 +114,55 @@ menu{
     flex-wrap: wrap;
     justify-content: center;
     
+}
+
+#servicosMaisSolicitados{
+    text-align: center;
+}
+#listServicosMaisSolicitados{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.cardServicosMaisSolicitados{
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: -5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.cardServicosMaisSolicitados img{
+    margin: 5px;
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+}
+.cardServicosMaisSolicitados p{
+    text-align: center;
+    justify-self: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.cardServicosMaisSolicitados button{
+    padding: 5px 15px;
+    border-radius: 20px;
+    border-color: var(--body-button);
+    background-color: var(--body-button);
+    color: white;
+    font-weight: 700;
+    transition: 1s;
+}
+.cardServicosMaisSolicitados button:hover{
+    border-color: var(--body-button-hover);
+    background-color: var(--body-button-hover);
 }
 .servico{
     background-color: white;
@@ -120,7 +202,7 @@ menu{
 
 .btn-primary{
     font-family: 'Montserrat';font-size: 15px !important;
-    background-color: blueviolet;
+    background-color: var(--body-button);;
     border: 0ch;
 }
 
