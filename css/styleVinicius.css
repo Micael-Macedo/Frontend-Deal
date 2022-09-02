@@ -69,6 +69,8 @@
 }
 
 .card-body2{
+    height: 400;
+    border: 0ch;
     text-align: center;
 }
 
@@ -79,9 +81,8 @@
 }
 
 .card-foto{
-    border-radius: 10px;
     font-size: 14;
-    padding: 30;
+    padding: 15;
     background-color: #eeeeee;
     text-align: center;
 }
