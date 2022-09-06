@@ -21,6 +21,10 @@
 header{
     position: sticky;
 }
+section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 nav{
     font-size: 30px;
     display: flex;
@@ -188,7 +192,27 @@ h2{
     justify-content: center;
     align-items: center;
 }
-
+#content_Info_Deal_Devs{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+}
+#Deal_sobre_nos{
+    background-image: url("../img/BG\ 1.png");
+    text-align: center;
+}
+.info_Deal_Dev{
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    margin-bottom: 10px;
+}
+.info_Deal_Dev img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
 .fontMontserrat{
     font-family: 'Montserrat';font-size: 30px;
     
