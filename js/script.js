@@ -1,25 +1,28 @@
-var menu = document.getElementById('navMenu');
+var menu = document.getElementById('navMenuButton');
 function exibirMenu(){
-    if(menuItens.style.display == 'block'){
-        menuItens.style.display = 'none'
+    if(NavMobile.style.display == 'flex'){
+        NavMobile.style.display = 'none'
     }else{
-        menuItens.style.display = 'block'
+        NavMobile.style.display = 'flex'
+        
     }
 }
-if(document.body.scrollWidth > 1000){
-    menuItens.style.display = 'block';
+if(document.body.scrollWidth > 1200){
+    menuItensDesktop.style.display = 'flex';
     menu.style.display = "none";
+    NavMobile.style.display = 'none';
 }else{
     menu.style.display = "block";
-    menuItens.style.display = 'none';
+    menuItensDesktop.style.display = 'none';
 }
 window.addEventListener('resize',function tamanhoNav(){
     
-    if(document.body.scrollWidth < 1000){
+    if(document.body.scrollWidth < 1200){
         menu.style.display = "block";
-        menuItens.style.display = 'none';
+        menuItensDesktop.style.display = 'none';
     }else{
         menu.style.display = "none";
-        menuItens.style.display = 'block';
+        menuItensDesktop.style.display = 'flex';
+        NavMobile.style.display = 'none';
     }
 },true);

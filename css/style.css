@@ -8,8 +8,8 @@
     --nav-button-text-hover: blueviolet !important;
     --nav-button-menu-bg: whitesmoke; 
     --nav-button-menu-text: blueviolet;
-    --nav-button-menu-bg-hover: whitesmoke; 
-    --nav-button-menu-text-hover: #8a2be2;
+    --nav-button-menu-bg-hover: black; 
+    --nav-button-menu-text-hover: white;
     --h1-introducao-site: black;
     --h2-tipos-de-servicos: white;
     --body-button: blueviolet !important;
@@ -18,16 +18,8 @@
     --body-button-text-hover: white !important;
 
 }
-header{
-    position: sticky;
-}
-section{
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
 nav{
     font-size: 30px;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -41,13 +33,11 @@ nav ul{
 }
 nav li{
     display: flex;
-    flex-direction: row;
     margin: 10px 20px;
     align-items: center;
     align-content: center;  
 }
 nav a{
-    display: flex;
     align-items: center;
     text-decoration: none;
     color: var(--nav-button-text);
@@ -60,20 +50,38 @@ nav img{
     width: 60px;
     height: 60px;
 }
-span#navMenu{
+#NavContent{
+    display: flex;
+    flex-direction: column;
+}
+#navMenuButton{
     background-color: var(--nav-button-menu-bg);
     color: var(--nav-button-menu-text);
-    padding: 10px;
-    display: block;
-    cursor: pointer;
+    display: flex;
+    border-radius: 5px;
+    margin: 20px 10px;
 }
-span#navMenu:hover{
+#navMenuButton:hover{
     background-color: var(--nav-button-menu-bg-hover) ;
     color: var(--nav-button-menu-text-hover) ;
+    transition: 0.5s;
 }
-menu{
-    display: none;
+#NavMobile{
+    display: flex; 
+    align-items: center; 
+    text-align: center;
+    justify-content: center;
+    background-color: whitesmoke;
 }
+#NavMobile ul{
+    flex-direction: column;
+}
+
+section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 
 #introducao_Site{
     display: flex;
