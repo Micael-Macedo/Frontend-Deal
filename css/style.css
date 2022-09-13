@@ -233,6 +233,13 @@ h2{
     font-family: 'Montserrat';font-size: 30px;
     
 }
+.fontMontserrat2{
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 900;
+    padding-top: -20;
+    
+}
 
 .mb-3{
     width: 500px;
