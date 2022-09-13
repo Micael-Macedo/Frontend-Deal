@@ -15,25 +15,40 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html"><img src="img/Icone Oficial Deal.jpg" alt=""> Deal</a></li>
-            </ul>
-            <div>
-                <menu id="menuItens">
+            <div id="NavContent">
+                <div style="display: flex; justify-content: space-between;">
+                    <ul>
+                        <li><a href="index.html"><img src="img/Icone Oficial Deal.jpg" alt=""> Deal</a></li>
+                    </ul>
+                    <button style="display: flex;" id="navMenuButton" class="material-icons" on onclick="exibirMenu()">Menu</button>
+                    <div id="menuItensDesktop">
+                        <ul>
+                            <li>
+                                <a href="paginaDePrestadores.html">Prestadores</a>
+                            </li>
+                            <li>
+                                <a href="">Serviços</a>
+                            </li>
+                            <li>
+                                <a href="login.html">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="NavMobile">
                     <ul>
                         <li>
                             <a href="paginaDePrestadores.html">Prestadores</a>
                         </li>
                         <li>
-                            <a href="selecaoDoServico.html">Serviços</a>
+                            <a href="">Serviços</a>
                         </li>
                         <li>
                             <a href="login.html">Login</a>
                         </li>
                     </ul>
-                </menu>
+                </div>
             </div>
-            <span style="display: none;" id="navMenu" class="material-icons" on onclick="exibirMenu()">Menu</span>
         </nav>
     </header>
     <div class="container" style="text-align: center; margin-bottom: -70;">
