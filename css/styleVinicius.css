@@ -75,13 +75,18 @@
 }
 
 .card-body3{
-    width: 500px;
+    width: 400px;
     padding-bottom: 50px;
     text-align: center;
 }
 
 .card-body4{
     width: 500px;
+  
+    text-align: center;
+}
+.card-body5{
+    width: 320px;
     text-align: center;
 }
 
@@ -123,4 +128,12 @@
     padding-top: 30;
     margin: 40;
     text-align: left;
+}
+
+.card-seus-servicos{
+    background-color: #ffffff;
+    margin: 40;
+    width: 340;
+    border-radius: 5%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
