@@ -26,3 +26,7 @@ window.addEventListener('resize',function tamanhoNav(){
         NavMobile.style.display = 'none';
     }
 },true);
+function funcaoConfirmaAcordo()
+{
+alert("O cliente será notificado da confirmação do acordo");
+}
